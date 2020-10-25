@@ -1,7 +1,4 @@
-# To run, enter
-# make all
-
-all: dph prod cons mycall
+all: dph prod cons
 
 dph: dph.c
 	gcc dph.c -lrt -lpthread -o dph
@@ -12,5 +9,3 @@ prod: prod.c
 cons: prod.c
 	gcc cons.c -lm -lrt -lpthread -o cons
 
-mycall: mycall.c
-	gcc mycall.c -o mycall
